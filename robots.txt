@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.secoyt.mx/sitemap.xml
+Sitemap: https://secoytmexico.com/sitemap.xml
