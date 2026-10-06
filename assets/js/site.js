@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.mobile-nav-toggle').forEach(b=>b.addEventListener('click',()=>{const n=b.parentElement.querySelector('nav');if(!n)return;const o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.textContent=o?'×':'☰'}));});
