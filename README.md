@@ -35,3 +35,7 @@ Las marcas identifican tecnologías integradas; el sitio no declara una relació
 Registrar el sitemap en Google Search Console y mantener actualizada la ficha de Google Business Profile desde las cuentas de la empresa. El código no garantiza posiciones en Google. No se agregaron identificadores ficticios de analítica ni testimonios o proyectos inventados. Los ejemplos de aplicación se identifican como tales.
 
 Para previsualizar: `python -m http.server 8080` desde la raíz y abrir `http://localhost:8080/`. Verificar las páginas de escritorio y móvil, el menú y los enlaces de contacto antes de desplegar en el alojamiento final.
+
+## Evitar mezcla de versiones en producción
+
+El HTML incluye el CSS compartido de forma embebida. Así una copia HTML nueva lleva su diseño completo y no puede combinarse con una copia antigua de `styles.css` almacenada por el navegador/CDN. La fuente de estilos sigue siendo `assets/css/styles.css`; después de editarla ejecutar `python tools/prepare_static.py`. El mismo comando agrega una versión por contenido al enlace de JavaScript. Publicar todos los HTML y recursos del mismo commit, conservando las imágenes WebP y los logotipos.
