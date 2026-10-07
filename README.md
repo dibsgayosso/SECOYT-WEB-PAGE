@@ -1,25 +1,37 @@
-# SECOYT WEB PAGE
+# SECOYT · sitio corporativo
 
-Sitio corporativo SEO-first para SECOYT — Servicios de Construcción y Tecnología.
+Sitio estático en español de México, sin dependencias de ejecución ni proceso de compilación. Publicar los HTML, `assets/`, `robots.txt` y `sitemap.xml` en la raíz del dominio **https://secoytmexico.com/**. Las rutas de navegación y recursos son absolutas desde la raíz; GitHub Pages bajo un subdirectorio requiere adaptar esas rutas.
 
-## Objetivo
-Posicionar a SECOYT como empresa mexicana especializada en soluciones de seguridad y tecnología para PyMEs en CDMX.
+## Cambios
 
-## Mensajes principales
-- Empresa mexicana fundada en 2010.
-- Más de 5,400 cámaras instaladas.
-- Más de 12 años de experiencia.
-- Atención urgente el mismo día en CDMX, sujeta a disponibilidad.
-- CCTV, control de acceso, alarmas, redes, cableado y soporte.
-- Historia familiar con participación de Sócrates Dibs Jiménez Gayosso.
+- Diseño responsive, navegación completa en todas las páginas, menú accesible con cierre mediante Escape, pie de página y acceso rápido a contacto.
+- Imagen original generada del Zócalo, cámara y texto C5, en WebP de escritorio y móvil. C5 se presenta como elemento de una composición ilustrativa; no implica afiliación o conexión operativa de SECOYT con una dependencia gubernamental.
+- 21 páginas, incluidos servicios, guías, cobertura local y privacidad del contacto.
+- Títulos y descripciones únicos, canonicals, Open Graph, Twitter Card, imagen social JPG, Organization/WebPage y breadcrumbs estructurados.
+- Sitemap completo en el mismo dominio que los canonicals. Enlaces internos a las páginas locales y guías.
+- Formulario de cotización que abre WhatsApp con los campos codificados. No necesita backend y no envía mensajes automáticamente.
 
-## Importante antes de producción
-1. Reemplazar el número 5210000000000 en todos los enlaces de WhatsApp.
-2. Confirmar dominio final y reemplazar https://www.secoyt.mx/ si fuera distinto.
-3. Sustituir la imagen hero remota por una imagen propia optimizada WebP/AVIF del Zócalo/CDMX.
-4. Agregar logo oficial, certificados verificables y fotografías reales.
-5. Configurar Google Search Console, GA4 y Google Business Profile.
-6. Verificar cualquier mención de “distribuidor autorizado” antes de publicarla.
+## Contacto
 
-## SEO
-Incluye titles, meta descriptions, canonicals, robots.txt, sitemap.xml, schema básico LocalBusiness/Service/AboutPage y arquitectura por intención de búsqueda.
+Se conservó el número del repositorio: **55 6422 1858** y su enlace WhatsApp `5215564221858`. Para cambiarlo, reemplazar enlaces `wa.me`, `tel:`, el JSON-LD y `assets/js/site.js` de forma consistente.
+
+## Fuentes de logotipos reales
+
+Archivos guardados localmente en `assets/img/brands/`; se conservan proporciones y colores. Reducción y recorte de espacio transparente solo para optimización.
+
+| Marca | Fuente |
+| --- | --- |
+| Dahua | https://tvc.mx/images/store/our-brands/dahua.png |
+| ZKTeco | https://tvc.mx/images/store/our-brands/zkt.png |
+| Hikvision | https://iberia.hikvision.com/hubfs/Hikvision%20Logo%20white-2-Jan-24-2024-03-53-17-4118-PM.png |
+| DSC | https://dsc.tvc.mx/hubfs/DSC-blue.png |
+| Intec | https://www.intec.com.mx/web/image/website/1/logo |
+| TVC en Línea | https://dsc.tvc.mx/hubfs/TVC-LOGO-rgb.png |
+
+Las marcas identifican tecnologías integradas; el sitio no declara una relación de distribuidor autorizado. Los datos de trayectoria y formación se conservaron del contenido previo y deben corresponder a la documentación de SECOYT.
+
+## SEO y operación
+
+Registrar el sitemap en Google Search Console y mantener actualizada la ficha de Google Business Profile desde las cuentas de la empresa. El código no garantiza posiciones en Google. No se agregaron identificadores ficticios de analítica ni testimonios o proyectos inventados. Los ejemplos de aplicación se identifican como tales.
+
+Para previsualizar: `python -m http.server 8080` desde la raíz y abrir `http://localhost:8080/`. Verificar las páginas de escritorio y móvil, el menú y los enlaces de contacto antes de desplegar en el alojamiento final.
